@@ -1,0 +1,13 @@
+{
+    "port": "5000",
+    "path": "",
+    "auth": {
+        "enabled": false,
+        "username": "",
+        "password": ""
+    },
+    "extensions": [
+        ".mp3",
+        ".flac"
+    ]
+}
