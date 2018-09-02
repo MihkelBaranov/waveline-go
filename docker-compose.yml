@@ -1,0 +1,14 @@
+version: "2" 
+services:
+  waveline-server:
+    build: ./
+    ports:
+     - 7000:5000
+    environment:
+      - MUSIC_PATH=/music
+      - CACHE_PATH=/cache
+      - ART_PATH=/art
+    volumes:
+      - /home/mihkel/music:/music
+      - ./.cache:/cache
+      - ./.art:/art
