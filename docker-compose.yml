@@ -12,3 +12,4 @@ services:
       - /home/mihkel/music:/music
       - ./.cache:/cache
       - ./.art:/art
+      
