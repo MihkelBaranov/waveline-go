@@ -16,7 +16,7 @@ import (
 	"strconv"
 	"strings"
 	"time"
-
+	"./api"
 	"github.com/dhowden/tag"
 	"github.com/labstack/echo"
 	"github.com/labstack/echo/middleware"
@@ -101,6 +101,8 @@ func main() {
 
 	e.Use(middleware.Logger())
 	e.Use(middleware.Recover())
+
+	e.GET("/albums", api.Albums)
 
 	// Routes
 	e.GET("/sync", sync)
